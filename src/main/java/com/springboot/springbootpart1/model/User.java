@@ -1,19 +1,15 @@
 package com.springboot.springbootpart1.model;
 
-import javax.persistence.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
-//@Entity
 public class User {
-//    @Id
-//    @GeneratedValue(strategy= GenerationType.AUTO)
     private long Id;
     private String name;
     private String surname;
 
-    public User(){}
+    public User(long Id, String name, String surname){
+        this.Id = Id;
+        this.name = name;
+        this.surname = surname;
+    }
 
     public long getId() {
         return Id;
